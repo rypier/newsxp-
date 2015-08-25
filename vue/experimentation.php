@@ -43,7 +43,7 @@
         $id_source = $_SESSION['id_source'];      
     ?>
     <fieldset>
-    <form method="post" id="Form1" action="/experimentationNews/expe_2.php">
+    <form method="post" id="Form1" action="expe_2.php">
         <p>1/2</p>
         <p class="psource">
         <label for="text_area">Source:</label>

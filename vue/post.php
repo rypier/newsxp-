@@ -1,7 +1,9 @@
 <?php
 session_start();
-include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/modele/connexion_sql.php');
-
+include_once('../modele/connexion_sql.php');
+#include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/modele/connexion_sql.php');
+#include_once('modele/connexion_sql.php');
+#include_once('modele/connexion_sql.php');
 $text_choose = $_POST['radio_button'];
 
 if($text_choose == 'radio_1') {

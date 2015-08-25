@@ -1,6 +1,7 @@
 <?php
 session_start();
-include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/modele/Article.class.php');
+#include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/modele/Article.class.php');
+include_once('modele/Article.class.php');
 $source_txts = $_SESSION['texte_source'];
 $sims_txts = $_SESSION['texte_sim'];
 $id_sim = $_SESSION['id_sim'] ;
@@ -46,4 +47,4 @@ $txts_2['id'] = $id_comp;
 
 $array_ass = array($txts, $txts_2);
 
-include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/vue/experimentation_2.php');
+include_once('vue/experimentation_2.php');

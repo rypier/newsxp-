@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/modele/Article.class.php');
-
+#include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/modele/Article.class.php');
+include_once('modele/Article.class.php');
 $article = new Article();
 $sources  = $article -> get_source();
 
@@ -77,7 +77,6 @@ $txts_2['id'] = $id_comp;
 
 $array_ass = array($txts, $txts_2);
 
-echo $id_source;
 $_SESSION['id_source'] = $id_source;
 $_SESSION['id_diff'] = $id_diff;
 $_SESSION['id_comp'] = $id_comp;
@@ -88,5 +87,5 @@ $_SESSION['texte_comp'] = $comps_txts;
 $_SESSION['texte_sim'] = $sims_txts;
 
 #echo $id_source;
-include_once($_SERVER["DOCUMENT_ROOT"].'/experimentationNews/vue/experimentation.php');
+include_once('vue/experimentation.php');
 
