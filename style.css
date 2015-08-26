@@ -1,5 +1,21 @@
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+body{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 100%;
+}
 nav {
     overflow : hidden;
+    background-color: #3c3c3c;
+    padding: 2%;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav ul {
@@ -15,7 +31,110 @@ nav ul li {
 nav > ul > li > a {
     display: block;
     text-decoration: none;
+    color:#e6e6e6 ;
+    font-weight: bold;
 }
+nav ul li:nth-child(2) {
+    color: white;
+    padding: 0 5px;
+}
+nav > ul > li > a:hover {
+    color: #ec6408;
+}
+
+section{
+    margin:2% 5%;
+}
+
+footer{
+    border-top: 4px solid #3c3c3c;
+    padding: 1% 2%;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #e6e6e6;
+}
+footer p{
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+fieldset{
+    border:none;
+}
+fieldset p span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+section fieldset p:first-child{
+    color: #ec6408;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+}
+
+form textarea{
+    width: 100%;
+    height: 170px;
+    border: none;
+    background-color: #e6e6e6;
+  
+}
+
+.light{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.separate{
+    width: 48%;
+    float: left;
+}
+
+.separate textarea{
+     border-bottom: 2px solid black;
+      padding-bottom: 12px;
+}
+
+
+fieldset form p{
+    margin-bottom: 2%;
+}
+hr{margin-bottom: 1%;}
+
+.margin{
+    margin-left: 4%;
+}
+
+form p:last-child{
+    clear: left;
+}
+.button{    background-color: #ec6408;
+    border: none;
+    border-radius: 1000px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-right: 0.5em;}
+
+
+.radio_1, .radio_2{
+    margin-top: 2%;
+
+}
+
 
 .psource {
     margin-left: auto;

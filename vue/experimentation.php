@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <link rel="stylesheet" media="screen" href="application-987d06d8b8864f5dc5d9324059ae2d3345edc55b159d1069ad80e016fbdbba64.css" />
+    <!--link rel="stylesheet" media="screen" href="application-987d06d8b8864f5dc5d9324059ae2d3345edc55b159d1069ad80e016fbdbba64.css" /-->
     <link rel="stylesheet" media="screen" href="style.css" />
     <script src="jquery.elastic.source.js" type="text/javascript"></script>
     <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
@@ -44,9 +44,9 @@
     ?>
     <fieldset>
     <form method="post" id="Form1" action="expe_2.php">
-        <p>1/2</p>
+        <p>STEP 1</p>
         <p class="psource">
-        <label for="text_area">Source:</label>
+        <label class="light" for="text_area">Source</label>
         <?php
             foreach($source_txts as $source_txt)
             {
@@ -59,8 +59,8 @@
       </p>
       <hr>
 
-      <p>
-        <label for="text_area">Target:</label>
+      <p class="separate">
+        <label class="light" for="text_area">Target 1</label>
         
         <textarea readonly id="text_area_1" class="expand"><?php echo $txt_1['texte']; ?></textarea>
         <input type="hidden" name="text_target_1_id" value="<?php echo $id_1; ?>">
@@ -70,8 +70,8 @@
         </label>
       </p>
 
-      <p>
-        <label for="text_area">Target:</label>
+      <p class="separate margin">
+        <label class="light" for="text_area">Target 2</label>
         <textarea readonly id="text_area_2" class="expand"><?php echo $txt_2['texte']; ?></textarea>
         <input type="hidden" name="text_target_2_id" value="<?php echo $id_2; ?>">
         <input type="hidden" name="text_target_2_classe" value="<?php echo $classe_2; ?>">
